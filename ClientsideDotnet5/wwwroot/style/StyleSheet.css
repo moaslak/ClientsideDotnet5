@@ -1,0 +1,55 @@
+﻿body {
+    background-color: antiquewhite;
+}
+li {
+    background-color: #aaaaaa;
+    display: inline;
+    float: left;
+}
+li a {
+    font-size: 1.2em;
+    font-weight: 500;
+    display: block;
+    color: dimgrey;
+    text-align: center;
+    padding: 10px 10px;
+}
+li a:hover {
+    background-color:lightgray;
+}
+ul { 
+    background-color: darkgray;
+    position: fixed;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+
+}
+h3 {
+
+}
+p {
+    font-size: 1.2em;
+}
+a {
+    font-weight: 500;
+    font-size: 1.2em;
+    color: blue;
+}
+a:hoover {
+    background-color: darkblue;
+    text-decoration: underline;
+}
+a:visited {
+    color: blueviolet;
+}
+.active {
+    background-color: white;
+}
+.about {
+    float: right;
+    background-color: lightgray;
+    align-content: end;
+}
