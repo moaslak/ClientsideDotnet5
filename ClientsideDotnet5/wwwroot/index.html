@@ -8,12 +8,23 @@
 </head>
 <body>
     <h1>Website heading</h1>
-    <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="content.html">Content</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a class="about" href="about.html">About</a></li>
-    </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="content.html" class="nav-item nav-link">Content</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
