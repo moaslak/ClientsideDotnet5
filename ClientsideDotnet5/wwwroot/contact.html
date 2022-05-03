@@ -4,19 +4,25 @@
     <meta charset="utf-8" />
     <title>Contact</title>
     <link href="style/StyleSheet.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#navbar").load("navbar.html");
+        });
+    </script>
 </head>
 <body>
     <h1>Contact</h1>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="content.html">Content</a></li>
-        <li><a class="active" href="contact.html">Contact</a></li>
-        <li><a class="about" href="about.html">About</a></li>
-    </ul>
+    <div id="navbar">
+    </div>
     </br>
     </br>
     </br>
     </br>
-    <a href="www.google.com">Ask google</a>
+    <a href="http://www.google.com">Ask google</a>
 </body>
 </html>
