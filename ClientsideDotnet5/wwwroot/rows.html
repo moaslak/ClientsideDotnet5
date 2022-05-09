@@ -1,28 +1,45 @@
 ﻿<!DOCTYPE html>
 <html>
-<head id="header">
+<head>
     <meta charset="utf-8" />
-    <title>Home</title>
+    <title>Rows</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body>
     <div class="container">
         <h1 style="text-align:center">Home</h1>
         <header id="navbar">
         </header>
     </div>
-    <div class="container"
-        <h2>Home screen</h2>
-        <form action="helloPage.html">
-            <label for="fname">First name:</label><br>
-            <input class="form-control" type="text" id="fname" name="fname" placeholder="First name"><br>
-            <label for="lname">Last name:</label><br>
-            <input class="form-control" type="text" id="lname" name="lname" placeholder="Last name">
-            </br>
-            <input class="btn-x" type="submit" value="Submit" style="padding: 5px">
-        </form>
+    <div class="container" style="padding:5px 5px">
+        <h1>Rows</h1>
+        <div class="row" style="margin: 5px 5px 5px 5px">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="background-color:red;">
+                <ul>
+                    <li onclick="#hest">hest</li>
+                    <li>test</li>
+                </ul>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" style="background-color:grey">
+                <form>
+                    <label>label 1</label>
+                    <input placeholder="write some text"/>
+                </form>
+            </div>
+
+          
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="background-color:#ccc">
+                <button type="button" onclick="toggle()" id="hestBtn">
+                    Hest
+                </button>
+                <img id="image" src="" />
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -32,7 +49,13 @@
             $("#navbar").load("navbar.html");
             $("#footer").load("footer.html");
         });
+        function toggle() {
+            let image = document.getElementById("image");
+            image.src = "images/hest.jpg";
+            flag = 1;
+        }
     </script>
+
     <footer id="footer"></footer>
 </body>
 </html>
