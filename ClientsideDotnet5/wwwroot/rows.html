@@ -47,10 +47,10 @@
     <div class="container">
         <div class="row-lg-9">
             <div class="col-lg-3" style="background-color:#ccc">
-                <button type="button" onclick="toggle()" id="hestBtn">
-                    Hest
-                </button>
-                <img id="image" src="" />
+                <button type="button" onclick="toggle()" id="showImage">
+                    Heste toggle
+                </input>
+                <img style="visibility:hidden" id="hest" src="images/hest.jpg" />
             </div>
         </div>
     </div>
@@ -60,10 +60,14 @@
             $("#footer").load("footer.html");
         });
         function toggle() {
-            let image = document.getElementById("image");
-            image.src = "images/hest.jpg";
-            flag = 1;
-        }
+            if (document.getElementById("hest").style.visibility == "visible") {
+                document.getElementById("hest").style.visibility = "hidden";
+            }
+            else {
+                document.getElementById("hest").style.visibility = "visible";
+            }
+                
+        }  
     </script>
     <footer id="footer"></footer>
 </body>
